@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #fff; /* White text for glowing effects */
+  background: linear-gradient(to bottom, #007acc, #004d99); /* Unified gradient */
+  background-attachment: fixed;
+}
+
+/* Glowing Text Effect */
+.glow-text {
+  color: #fff;
+  text-shadow: 0 0 5px #00e6e6, 0 0 10px #00e6e6, 0 0 20px #00e6e6, 0 0 30px #00e6e6, 0 0 40px #00e6e6, 0 0 50px #00e6e6, 0 0 75px #00e6e6;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #001f3f; /* Dark navy for strong contrast */
+  padding: 15px 30px;
+  color: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #00e6e6;
+  text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6, 0 0 30px #00e6e6;
+}
+
+.hero .hero-tagline {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  text-shadow: 0 0 5px #00e6e6, 0 0 15px #00e6e6;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: #ffcc00;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(255, 204, 0, 1);
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 40px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #00e6e6, 0 0 15px #00e6e6;
+}
+
+/* Projects Section */
+.project-card {
+  background: #001f3f; /* Dark card background */
+  color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 230, 230, 0.8);
+}
+
+/* Skills Section */
+.skills-grid span {
+  background: linear-gradient(to right, #00e6e6, #007acc);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-shadow: 0 0 5px #00e6e6, 0 0 10px #00e6e6;
+}
+
+.skills-grid span:hover {
+  background: #004d99;
+  box-shadow: 0 0 10px #00e6e6;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
